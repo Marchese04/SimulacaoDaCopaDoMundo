@@ -9,14 +9,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Match {
 
-    private Team TeamA;
-    private Team TeamB;
+    private Team teamA;
+    private Team teamB;
 
-    private int GoalsA;
-    private int GoalsB;
+    private int goalsA;
+    private int goalsB;
 
     // In case of knockout
-    private int PenaltiesA;
-    private int PenalstiesB;
+    private int penaltiesA;
+    private int penalstiesB;
 
 }

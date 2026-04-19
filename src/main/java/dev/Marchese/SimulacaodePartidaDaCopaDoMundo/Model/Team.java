@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 public class Team {
 
     private String id;
-    private String Name;
+    private String name;
 
     // Statistic
     private int points = 0;
