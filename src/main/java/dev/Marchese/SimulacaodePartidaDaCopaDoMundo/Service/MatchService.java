@@ -50,13 +50,13 @@ public class MatchService {//this is the factory that knows how to make football
             if(penaltiesA > penaltiesB){//whoever scored the most penalties wins
                 return match.getTeamA();//returns the winner
             }else{
-                return match.getTeamB();
+                return match.getTeamB();//return winner
             }
         }
-        if(match.getGoalsA() > match.getGoalsB()){
-            return match.getTeamA();
+        if(match.getGoalsA() > match.getGoalsB()){//whoever scored the most goals wins
+            return match.getTeamA();//return the winner
         }else {
-            return match.getTeamB();
+            return match.getTeamB();//return the winner
         }
     }
 

@@ -38,6 +38,11 @@ public class TeamMapper {
                 .map(this::toDTO)
                 .collect(Collectors.toList());
     }
-
+    //Take a list of DTOs and turn each one into a Team
+    public List<Team> toModelList(List<TeamDTO> dtos) {
+        return dtos.stream()
+                .map(this::toModel)
+                .collect(Collectors.toList());
+    }
 
 }
