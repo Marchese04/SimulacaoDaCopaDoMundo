@@ -7,6 +7,7 @@ import dev.Marchese.SimulacaodePartidaDaCopaDoMundo.Model.Group;
 import dev.Marchese.SimulacaodePartidaDaCopaDoMundo.Model.Team;
 import dev.Marchese.SimulacaodePartidaDaCopaDoMundo.Service.GroupStageService;
 import dev.Marchese.SimulacaodePartidaDaCopaDoMundo.Service.KnockoutService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/worldcup")
 public class WorldCupController {
