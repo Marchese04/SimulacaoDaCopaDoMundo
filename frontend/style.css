@@ -1,0 +1,134 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #397ed8, #643aa8);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+}
+
+.groups {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.group-header {
+    width: 45px;
+    height: 45px;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #f8c27a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.group-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 60px;
+}
+
+.team-slot {
+    width: 120px;
+    height: 28px;
+    border: 1px solid #f8c27a;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    font-size: 12px;
+}
+
+.bracket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side .round:nth-child(1) {
+    height: 380px;
+}
+
+.side .round:nth-child(2) {
+    height: 260px;
+}
+
+.side .round:nth-child(3) {
+    height: 160px;
+}
+
+.side:last-child .round:nth-child(1) {
+    height: 160px;
+}
+
+.side:last-child .round:nth-child(2) {
+    height: 260px;
+}
+
+.side:last-child .round:nth-child(3) {
+    height: 380px;
+}
+
+.match {
+    border: 2px solid #f8c27a;
+    padding: 6px;
+    border-radius: 6px;
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.match span {
+    display: block;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.final {
+    width: 130px;
+}
+.groups.right .group {
+    flex-direction: row-reverse;
+}
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(20, 28, 126);
+    color: white;
+    cursor: pointer;
+}
